@@ -1,0 +1,30 @@
+{
+  "name": "reform-reasonmlbr",
+  "version": "0.1.0",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "bs-reform",
+    "reschema",
+    "reason-react",
+    "reason-promise"
+  ],
+  "warnings": {
+    "error" : "+101"
+  },
+  "ppx-flags": [
+    "lenses-ppx/ppx",
+    [ "@dylanirlbeck/tailwind-ppx/tailwind-ppx", "-path ./src/tailwind.output.css" ]
+  ],
+  "reason": {
+    "react-jsx": 3
+  },
+  "refmt": 3
+}
